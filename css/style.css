@@ -10,6 +10,7 @@
     font-family: "open sans";
     --theme-green: rgb(132, 198, 4);
     --theme-orange: rgb(253, 79, 16);
+    box-sizing: border-box;
 }
 
 .header {
@@ -171,12 +172,23 @@
     border-radius: 10px;
     flex-direction: column;
 }
+.food-container {
+    width: 233px;
+    border-radius: 10px;
+}
+.food-container img {
+    width: 100%;
+}
 .lower {
     text-align: center;
     width: 80%;
     margin: 0 auto;
     flex-direction: column;
     height: 180px;
+}
+.lower p {
+    font-weight: 400;
+    font-size: 80%;
 }
 .price-block {
     font-weight: 700;
@@ -212,7 +224,38 @@
 .btn-into-cart:hover {
     background-color: rgb(200, 53, 0);
 }
-
+.points {
+    width: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.point-green {
+    background-color: var(--theme-green);
+}
+.point-gray {
+    background-color: rgb(179, 179, 179);
+}
+.special-marker {
+    position: absolute;
+    top: 150px;
+}
+.first {
+    left: 165px;
+}
+.second {
+    left: 427px;
+}
+.third {
+    left: 695px;
+}
+.fourth {
+    left: 960px;
+}
 
 
 .d-flex {display: flex;}
@@ -246,3 +289,6 @@
 .mb3 {margin-bottom: 3em}
 .mb4 {margin-bottom: 4em}
 .mb5 {margin-bottom: 5em}
+.pf {position: fixed}
+.pr {position: relative}
+.pa {position: absolute}
