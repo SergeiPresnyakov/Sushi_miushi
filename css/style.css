@@ -9,6 +9,7 @@
     padding: 0;
     font-family: "open sans";
     --theme-green: rgb(132, 198, 4);
+    --theme-orange: rgb(253, 79, 16);
 }
 
 .header {
@@ -21,7 +22,7 @@
     left: 0;
 }
 .footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -60,7 +61,7 @@
     text-transform: uppercase;
     font-weight: 600;
 }
-.btn{
+.btn {
     text-align: center;
     background-attachment: white;
     line-height: 40px;
@@ -140,7 +141,7 @@
     text-decoration: none;
 }
 .button-body {
-    background-color: rgb(253, 79, 16);
+    background-color: var(--theme-orange);
     width: 50%;
     border-radius: 4px;
     padding: 10px;
@@ -171,7 +172,11 @@
     flex-direction: column;
 }
 .lower {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
     flex-direction: column;
+    height: 180px;
 }
 .price-block {
     font-weight: 700;
@@ -194,6 +199,20 @@
 .quantity-block span {
     font-size: 12px;
 }
+.btn-into-cart {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--theme-orange);
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.15s ease-out;
+}
+.btn-into-cart:hover {
+    background-color: rgb(200, 53, 0);
+}
+
 
 
 .d-flex {display: flex;}
@@ -205,6 +224,7 @@
 .justify-content-around {justify-content: space-around;}
 .justify-content-between {justify-content: space-between;}
 .justify-content-evenly{justify-content: space-evenly;}
+.justify-content-end {justify-content: end;}
 .ml1 {margin-left: 1em}
 .ml2 {margin-left: 2em}
 .ml3 {margin-left: 3em}
