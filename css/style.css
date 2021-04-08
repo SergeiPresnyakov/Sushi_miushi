@@ -28,8 +28,6 @@
     height: 200px;
     border: 1px solid black;
 }
-
-
 .container {
     min-width: 1070px;
     max-width: 1170px;
@@ -154,6 +152,49 @@
 .button-body:hover {
     background-color: rgb(200, 53, 0);
 }
+.menu {
+    flex-direction: column;
+}
+.menu-label {
+    font-family: "Lemon Tuesday Regular";
+    font-size: 45px;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: rgb(50, 80, 90);
+}
+
+.product-card {
+    height: 461px;
+    width: 263px;
+    border: 15px solid rgb(251, 251, 251);
+    border-radius: 10px;
+    flex-direction: column;
+}
+.lower {
+    flex-direction: column;
+}
+.price-block {
+    font-weight: 700;
+}
+.amount {
+    font-size: 125%;
+    font-family: "Roboto Slab";
+    margin-right: 5px;
+}
+.currency {
+    font-size: 90%;
+    font-family: "Roboto Slab";
+}
+.quantity-block {
+    width: 65px;
+}
+.quantity-block i {
+    color: rgb(128, 128, 128);
+}
+.quantity-block span {
+    font-size: 12px;
+}
+
 
 .d-flex {display: flex;}
 .align-items-baseline {align-items: baseline;}
@@ -161,6 +202,7 @@
 .align-content-center {align-content: center;}
 .align-items-center {align-items: center;}
 .justify-content-center {justify-content: center;}
+.justify-content-around {justify-content: space-around;}
 .justify-content-between {justify-content: space-between;}
 .justify-content-evenly{justify-content: space-evenly;}
 .ml1 {margin-left: 1em}
