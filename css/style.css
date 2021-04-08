@@ -171,9 +171,13 @@
     border: 15px solid rgb(251, 251, 251);
     border-radius: 10px;
     flex-direction: column;
+    background-image: url('/img/product_card.png');
+    background-position: center;
+    overflow: hidden;
 }
 .food-container {
     width: 233px;
+    height: 190px;
     border-radius: 10px;
 }
 .food-container img {
@@ -181,10 +185,10 @@
 }
 .lower {
     text-align: center;
-    width: 80%;
+    width: 81%;
     margin: 0 auto;
     flex-direction: column;
-    height: 180px;
+    height: 200px;
 }
 .lower p {
     font-weight: 400;
@@ -256,7 +260,47 @@
 .fourth {
     left: 960px;
 }
-
+.special-second {
+    top: 56px;
+    left: 734px;
+}
+.add-price {
+    font-size: 10px;
+}
+.addition i {
+    color: var(--theme-orange);
+}
+.addition > .val {
+    position: absolute;
+    top: 0px;
+    left: 81px;
+}
+.special-part {
+    margin-top: 70px;
+    width: 100%;
+    height: 600px;
+    background-image: url('/img/special_background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.special-links {
+    margin: 20px 0 20px 75px;
+}
+.special-links a {
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 50px;
+    color: rgb(192, 192, 192);
+    transition: all 0.15s ease-out;
+}
+.special-links a[class="active"] {
+    color: var(--theme-orange);
+}
+.special-links a:hover {
+    color: var(--theme-orange);
+}
 
 .d-flex {display: flex;}
 .align-items-baseline {align-items: baseline;}
@@ -292,3 +336,4 @@
 .pf {position: fixed}
 .pr {position: relative}
 .pa {position: absolute}
+.fd-column {flex-direction: column;}
